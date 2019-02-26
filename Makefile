@@ -22,7 +22,6 @@ source_management:
 
 
 presentation:
-	make clean
 	mkdir $(output)
 	make introduction
 	make linux_lesson
@@ -30,7 +29,7 @@ presentation:
 
 
 clean:
-	rm -rf $(output)
+	rm -r $(output)
 
 
 develop:
