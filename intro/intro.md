@@ -1,6 +1,9 @@
+
 # Introduction to Scientific Programming
 
+![alt text](./imgs/intro_lidar.png "Logo Title Text 1")
 
+----
 
 ## Why do I need to know how to program?
 
@@ -9,4 +12,7 @@
 3. Avoid endless repetitive tasks that will ultimately kill your career
 
 
-### Programming is like notetaking that also does your homework.
+
+
+
+ **Programming is like notetaking that also does your homework.**
