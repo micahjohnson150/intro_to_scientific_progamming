@@ -22,6 +22,10 @@ Given Python's popularity, there are many available resources. Most problems can
 
 ----
 ## Basics
+
+Python, like all programming languages, have different data types so that your
+system knows what type of data it is looking at. The common types are **int, float, string, list, and dictionary.** One thing that is different than many other forms of programming is that the data type is implicit to the definition of the variable. For instance. Python knows that ```a = 5``` is an int, ```b = 27.654``` is a float, and ```c = ['some', 'words', 'here', 6]``` is a list.
+
 data types
 auto casting (vs other languages)
 
