@@ -10,6 +10,7 @@
 1. Modern research pretty much requires it
 2. Track your work easier
 3. Avoid endless repetitive tasks that will ultimately kill your career
+4. Working with real data is challenging
 
 
 
@@ -24,7 +25,7 @@
 * Learn some tools to manage your data and codes
 
 
-![ ](https://en.wikipedia.org/wiki/File:Tux_Mono.svg =100x20)
+![alt text](https://en.wikipedia.org/wiki/File:Tux_Mono.svg)
 
-![ ](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg =100x20)
-![ ](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png  =100x20)
+![alt text](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+![alt text](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
