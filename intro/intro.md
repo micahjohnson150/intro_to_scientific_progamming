@@ -25,7 +25,10 @@
 * Learn some tools to manage your data and codes
 
 
-![alt text](https://en.wikipedia.org/wiki/File:Tux_Mono.svg)
+ ![linux][linux logo]
+ ![python][python logo]
+ ![github][github logo]
 
-![alt text](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
-![alt text](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+[linux logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tux_Mono.svg/99px-Tux_Mono.svg.png
+[python logo]: https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg
+[github logo]: https://avatars1.githubusercontent.com/u/9919?s=200&v=4
