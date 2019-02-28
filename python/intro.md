@@ -1,6 +1,6 @@
 # Python for Scientists
 
-
+![sj swe](./imgs/sj_swe.png "San Joaquin SWE")
 
 ----
 ## Preaching Python
@@ -99,26 +99,77 @@ In this example, we put some integers and strings in a list, and then modify the
 ----
 ### Dictionaries
 
-Dictionaries are a data structure that allow you to store an unordered combination of keys and values. A key is sort of like an index that tells you where to find a piece of data (your value).
+Dictionaries are a data structure that allow you to store an unordered combination of keys and values. A key is like an index that tells you where to find a piece of data (your value).
+
+For instance we could create a dictionary of variables and their descriptions:
+
+```
+vars = {'snow_density' : 'Predicted average snow density',
+        'specific_mass' : 'Predicted specific mass of the snowcover',
+        'water_saturation': 'Predicted percentage of liquid water saturation of the snowcover'}
+```
+
+We can then find the description of a variable by using the variable name as a key
+
+![dictionary terminal](./imgs/terminal_dictionary.png "Dictionary example")
+
+Dictionary methods can be found here
+
+https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 
 ----
-### Arrays (np)
+## Important Packages
+
+Taking a short break from data types, there are a few Python packages that we will frequently use in development and data analysis. These expand the base functionality of Python.
+
+ * numpy - Array creatioon and manipulation
+ * pandas - Data structure and data analysis functionality
+ * matplotlib - Plotting and visualization
+ * netCDF4 - Reading and writing 2D and 3D data with NetCDF files
+
+----
+### Arrays
+
+The Python Numpy library is a must for scientific programming. Our main use for Numpy is the manipulation of 1, 2, and 3 dimensional arrays. The library makes array math quick and easy using the ```numpy.ndarray``` class. This allows us to store and manipulate rasters of snowpack and environmental variables with ease. Here is a quick example of storing and manipulating arrays.
+
+![array terminal](./imgs/terminal_array.png "Array example")
+
+In this example we created a random 3x3 array, replaced any value less than 0.6 with 0.0, and then summed all of the values in the array.
 
 ----
 ### Pandas DataFrames
 
-----
-### Loops
+Pandas is another must have library for data analysis and good science in Python. It is everything you could want in Excel, but faster and more versatile.
 
 ----
 ### Conditionals
 
+Conditionals are the programmatic way to compare some value against a criteria. It is stripped down, very logical thinking.
+
+Let's say there is a kid in an amusement park and he wants to ride the super awesome roller coaster. This kid is 1.42 meters tall (this is Python for scientists so we have to use metric). You have to be 1.51 m tall to ride the super awesome roller coasters, but only 1.4 m tall to ride the kinda alright roller coasters. Here is that written out in conditionals
+
+```
+hgt = 1.42
+
+if hgt >= 1.51:
+
+  print('Go ride the awesome roller coasters')
+
+elif hgt >= 1.4:
+
+  print('No awesome roller coasters, just kinda alright ones')
+
+else:
+
+  print('Only lame rides for you, kid')
+```
+
 ----
-## Important Packages
-numpy
-pandas
-matplotlib
-netCDF4
+### Loops
+
+Like other programming languages, Python utilizes both ```for``` and ```while``` loops. A loop allows the program to step through a certain number of iterations in order to read or manipulate data. For instance, lets take a look at our list from earlier. Here are two different ways to loop through the list and print items that are not strings.
+
+![loop terminal](./imgs/terminal_loop.png "Loop example")
 
 ----
 ## Importing APIs and Docs
