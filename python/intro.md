@@ -1,6 +1,6 @@
 # Python for Scientists
 
-![python_image](https://www.python.org/static/img/python-logo.png)
+
 
 ----
 ## Preaching Python
@@ -19,12 +19,15 @@ Python is
 
  * Free to use
  * Broad in functionality
- * Strongly rooted in clean syntax.
- * Very readable
- * Promotes clean coding practices.
+ * Strongly rooted in clean syntax
+ * Promotes clean coding practices
+
+![python_image](https://upload.wikimedia.org/wikipedia/commons/a/ad/Lozingle_10032014.jpg)
 
 ----
-So what can you do with python? Pretty much anything you want.
+##So what can you do with python?
+
+Pretty much anything you want
 
  * Software packages
  * Data analysis
@@ -76,18 +79,39 @@ One thing that is different than many other forms of programming is that the dat
 ----
 ### Strings
 
+A string is a python datatype that stores any combination of characters and recognizes them as text. Documentation on the str class can be found at
 
+ https://docs.python.org/3/library/stdtypes.html#str
 
-floats/ints
-strings
-lists
-dictionaries
-arrays (np)
-pandas DataFrames
+The str class has many useful built in methods, such as *lower*, *upper*, and *replace*
 
-loops
+![string terminal](./imgs/terminal_string.png "String methods")
 
-conditionals
+----
+### Lists
+
+In Python, a list allows you to store any other datatype in an ordered fashion. Common list methods can be found at https://docs.python.org/3/tutorial/datastructures.html.
+
+In this example, we put some integers and strings in a list, and then modify the list.
+
+![list terminal](./imgs/terminal_list.png "List methods")
+
+----
+### Dictionaries
+
+Dictionaries are a data structure that allow you to store an unordered combination of keys and values. A key is sort of like an index that tells you where to find a piece of data (your value).
+
+----
+### Arrays (np)
+
+----
+### Pandas DataFrames
+
+----
+### Loops
+
+----
+### Conditionals
 
 ----
 ## Important Packages
