@@ -11,6 +11,7 @@ slides:
 	make setup
 	make introduction
 	make linux_lesson
+	make python_lesson
 	make source_management
 
 
@@ -25,6 +26,8 @@ introduction:
 linux_lesson:
 	landslide linux/intro.md -d $(output)/linux_introduction.html
 
+python_lesson:
+	landslide python/intro.md -d $(output)/python_introduction.html
 
 source_management:
 	landslide source_management/intro.md -d $(output)/source_management_introduction.html
