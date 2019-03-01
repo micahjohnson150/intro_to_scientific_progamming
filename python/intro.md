@@ -118,7 +118,26 @@ Dictionary methods can be found here
 https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 
 ----
-## Important Packages
+### Conditionals
+
+Conditionals are the programmatic way to compare some value against a criteria. It is stripped down, very logical thinking.
+
+Here is a conditional regarding the density of the top layer of the snowpack at a ski resort.
+
+
+![conditional terminal](./imgs/terminal_conditional.png "Conditional example")
+
+----
+### Loops
+
+Like other programming languages, Python utilizes both ```for``` and ```while``` loops. A loop allows the program to step through a certain number of iterations in order to read or manipulate data. For instance, lets take a look at our list from earlier. Here are two different ways to loop through the list and print items that are not strings.
+
+![loop terminal](./imgs/terminal_loop.png "Loop example")
+
+Notice that you can loop through a specific number of iterations or through the items of a list. This is true for dictionaries as well.
+
+----
+## Libraries to Know
 
 Taking a short break from data types, there are a few Python packages that we will frequently use in development and data analysis. These expand the base functionality of Python.
 
@@ -126,6 +145,44 @@ Taking a short break from data types, there are a few Python packages that we wi
  * pandas - Data structure and data analysis functionality
  * matplotlib - Plotting and visualization
  * netCDF4 - Reading and writing 2D and 3D data with NetCDF files
+
+----
+## Using and Understanding APIs
+
+**API - application programming interface**
+
+Well that sounds like nonsense. What is it really?
+* A collection of functions that let you access the power that's under the hood of a program in a structured manner
+* The clean, accessible layer on top of a software package
+* Allow for easy documentation on how to use a program
+
+Importing an API allows you to access the underlying functions and classes within your Python application. A simple `import {some_library}` call at the top of your Python script will allow you to bring in any Python library that you have installed and access the API.
+
+```
+import pandas as pd
+
+df = pd.read_csv('some_file.csv')
+```
+
+Alternatively, if you know you would only need the `read_csv` function, you could just bring that in
+
+```python
+
+from pandas import read_csv
+
+df = read_csv('some_file.csv')
+
+```
+
+Notice the two different ways we accessed the funciton using the pandas API.
+
+----
+## Reading an API
+Being able to read API documentation is key. This is an example of the documentation here: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html
+
+![pandas api](./imgs/pandas_api.png "pandas_api")
+
+This sort of documentation gives you a description of the specific function and all of its inputs and outputs.
 
 ----
 ### Arrays
@@ -139,43 +196,24 @@ In this example we created a random 3x3 array, replaced any value less than 0.6 
 ----
 ### Pandas DataFrames
 
-Pandas is another must have library for data analysis and good science in Python. It is everything you could want in Excel, but faster and more versatile.
+Pandas is another must have library for data analysis and good science in Python. It is everything you could want in Excel, but faster and more versatile. Let's using the pandas API from earlier to read in and average air temperature data for a station in RCEW. The steps will be
+
+1. Import pandas
+2. Read the data
+3. Isolate the station
+4. Get an Average
+
+![pandas terminal 1](./imgs/terminal_pandas_1.png "Pandas example")
 
 ----
-### Conditionals
+### Pandas Continued
+We were able to read in the data using the Pandas read_csv function, which returns a Pandas DataFrame class containging our information.
 
-Conditionals are the programmatic way to compare some value against a criteria. It is stripped down, very logical thinking.
+Now that we have the data imported. We need to isolate a column (RMESP in this case) and find the average over the period of record.
 
-Let's say there is a kid in an amusement park and he wants to ride the super awesome roller coaster. This kid is 1.42 meters tall (this is Python for scientists so we have to use metric). You have to be 1.51 m tall to ride the super awesome roller coasters, but only 1.4 m tall to ride the kinda alright roller coasters. Here is that written out in conditionals
+![pandas terminal 2](./imgs/terminal_pandas_2.png "Pandas example")
 
-```
-hgt = 1.42
-
-if hgt >= 1.51:
-
-  print('Go ride the awesome roller coasters')
-
-elif hgt >= 1.4:
-
-  print('No awesome roller coasters, just kinda alright ones')
-
-else:
-
-  print('Only lame rides for you, kid')
-```
-
-----
-### Loops
-
-Like other programming languages, Python utilizes both ```for``` and ```while``` loops. A loop allows the program to step through a certain number of iterations in order to read or manipulate data. For instance, lets take a look at our list from earlier. Here are two different ways to loop through the list and print items that are not strings.
-
-![loop terminal](./imgs/terminal_loop.png "Loop example")
-
-----
-## Importing APIs and Docs
-reading docs on apis
-importing apis
-using apis
+We did this by referencing the column name, and then calling the method, *mean()*, belonging the Pandas DataFrame class.
 
 ----
 ## Object Oriented Programming
